@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  height: 50px;
+  background: red;
+}
+.container {
+  width: 840px;
+  margin: 0 auto;
+}
+#content-wrapper {
+  float: left;
+  width: 100%;
+  background: pink;
+  #main {
+    margin-right: 200px;
+  }
+}
+#sidebar {
+  float: left;
+  width: 200px;
+  margin-left: -200px;
+  background: green;
+}
+#footer {
+  clear: left;
+  width: 100%;
+  text-align: center;
+  background: yellow;
+}
+@media only screen and (max-width: 840px) {
+  .container {
+    width: 100%;
+  }
+  #content-wrapper {
+    float: none;
+    #main {
+      margin-right: 0;
+    }
+  }
+  #sidebar {
+    float: none;
+    margin-left: 0;
+    width: 100%;
+  }
+}
