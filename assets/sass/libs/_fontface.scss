@@ -1,0 +1,14 @@
+/* Web Font: CamingoCode
+-------------------------------------------------- */
+@font-face {
+  @include fontface(italic, normal, 0);
+}
+@font-face {
+  @include fontface(normal, normal, 1);
+}
+@font-face {
+  @include fontface(normal, bold, 2);
+}
+@font-face {
+  @include fontface(italic, bold, 3);
+}

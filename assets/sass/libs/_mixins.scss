@@ -1,0 +1,11 @@
+//Web Font: CamingoCode
+@mixin fontface($style, $weight, $id) {
+  font-family: 'CamingoCode';
+  font-style: $style;
+  font-weight: $weight;
+  src: url(../fonts/2EFCBF_#{$id}_0.eot);
+  src: url(../fonts/2EFCBF_#{$id}_0.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/2EFCBF_#{$id}_0.woff2) format('woff2'),
+       url(../fonts/2EFCBF_#{$id}_0.woff) format('woff'),
+       url(../fonts/2EFCBF_#{$id}_0.ttf) format('truetype');
+}

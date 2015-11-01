@@ -1,6 +1,12 @@
 /* @group General Styles 
 -------------------------------------------------- */
+@import 'libs/mixins';
 @import 'libs/reset';
+@import 'libs/fontface';
+
+html {
+  font-family: CamingoCode, sans-serif;
+}
 /* @group Page Structure
 -------------------------------------------------- */
 /* Frame Layout */

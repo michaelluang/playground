@@ -25,6 +25,40 @@ body {
   box-sizing: border-box;
 }
 
+/* Web Font: CamingoCode
+-------------------------------------------------- */
+@font-face {
+  font-family: 'CamingoCode';
+  font-style: italic;
+  font-weight: normal;
+  src: url(../fonts/2EFCBF_0_0.eot);
+  src: url(../fonts/2EFCBF_0_0.eot?#iefix) format("embedded-opentype"), url(../fonts/2EFCBF_0_0.woff2) format("woff2"), url(../fonts/2EFCBF_0_0.woff) format("woff"), url(../fonts/2EFCBF_0_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'CamingoCode';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/2EFCBF_1_0.eot);
+  src: url(../fonts/2EFCBF_1_0.eot?#iefix) format("embedded-opentype"), url(../fonts/2EFCBF_1_0.woff2) format("woff2"), url(../fonts/2EFCBF_1_0.woff) format("woff"), url(../fonts/2EFCBF_1_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'CamingoCode';
+  font-style: normal;
+  font-weight: bold;
+  src: url(../fonts/2EFCBF_2_0.eot);
+  src: url(../fonts/2EFCBF_2_0.eot?#iefix) format("embedded-opentype"), url(../fonts/2EFCBF_2_0.woff2) format("woff2"), url(../fonts/2EFCBF_2_0.woff) format("woff"), url(../fonts/2EFCBF_2_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'CamingoCode';
+  font-style: italic;
+  font-weight: bold;
+  src: url(../fonts/2EFCBF_3_0.eot);
+  src: url(../fonts/2EFCBF_3_0.eot?#iefix) format("embedded-opentype"), url(../fonts/2EFCBF_3_0.woff2) format("woff2"), url(../fonts/2EFCBF_3_0.woff) format("woff"), url(../fonts/2EFCBF_3_0.ttf) format("truetype");
+}
+html {
+  font-family: CamingoCode, sans-serif;
+}
+
 /* @group Page Structure
 -------------------------------------------------- */
 /* Frame Layout */
