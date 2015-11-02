@@ -1,122 +1,27 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Clip to Top</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                max-width: 80%;
-                margin: 0 auto;
-                font-family: "Helvetica Nene", Arial, "sans-serif";
-                background: -webkit-linear-gridient(to bottom, red, orange, yellow, green, blue, indigo, violet);
-                background:    -moz-linear-gridient(to bottom, red, orange, yellow, green, blue, indigo, violet);
-                background:      -o-linear-gridient(to bottom, red, orange, yellow, green, blue, indigo, violet);
-                background:         linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
-            }
-            h1, p {
-                text-align: center;
-                margin-top: 50px;
-                font-size: 1.5em;
-                color: #202020;
-            }
-            #middle{
-                margin-top: 500px;
-            }
-            #bottom{
-                margin-top: 1000px;
-            }
-            pre {
-                position: relative;
-                white-space: pre;
-                text-align: left;
-                overflow-x: scroll;
-                color: #d3bd7e;
-                background: #202020;
-                margin: 50px 0;
-                border-radius: 20px;
-                padding: 10pt 15pt;
-            }
-            pre span {
-                position: absolute;
-                top: 10px;
-                left: 20px;
-                border: 1px solid #d3bd7e;
-                border-radius: 5px;
-                padding: 4px;
-            }
-            pre code {
-                font: 0.8em Menlo, 'lucida console', monospace;
-                line-height: 1.4;
-            }
-            #button {
-                position: fixed;
-                bottom: 0px;
-                right: 0px;
-                width: 60px;
-                height: 60px;
-                background: #202020;
-                text-align: center;
-                display: none;
-                border-radius: 15%;
-            }
-            #button:hover {
-                background: #d3bd7e;
-            }
-            #button a {
-                display: block;
-                font-size: 1.2em ;
-                color: #d3bd7e;
-                text-decoration: none;
-                line-height: 60px;
-            }
-            #button a:hover {
-                color: #202020;
-            }
-        </style>
-        <script>
-            window.onload = function() {
-                var height = document.documentElement.clientHeight,
-                    btn = document.getElementById('button'),
-                    timer = null,
-                    scroll = true;
-    
-                addEvent(btn, 'click', toTop);
-                addEvent(window, 'scroll', function(){
-                    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                    if (!scroll) {
-                        clearInterval(timer);
-                    }
-                    scroll = false;
-                    if (scrollTop > height) {
-                        btn.style.display = "block";
-                    } else {
-                        btn.style.display = "none";
-                    }
-                });   
-                function toTop() {
-                    timer = setInterval(function() {
-                        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                        var speed = Math.floor(- scrollTop / 10);
-                        document.documentElement.scrollTop = document.body.scrollTop = scrollTop + speed;
-                        scroll = true;
-                        if (scrollTop == 0) {
-                            clearInterval(timer);
-                        }
-                    }, 30);
-                }
-                function addEvent(element, event, listener) {
-                    if (element.addEventListener) {
-                        element.addEventListener(event, listener, false);
-                    } else{
-                        element.attachEvent('on' + event, listener);
-                    }
-                }
-            };
-        </script>
-    </head>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web development playground for fun">
+    <meta name="keywords" content="Web Development, Front-end Developer, HTML CSS JavaScript, michaelluang, Web Library">
+    <title></title>
+    <!-- Add to your homescreen! -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Playground">
+    <meta name="theme-color" content="000000">
+    <link rel="apple-touch-icon" href="" sizes="144x144">
+    <link rel="apple-touch-icon" href="" sizes="152x152">
+    <link rel="apple-touch-icon" href="" sizes="180x180">
+    <link rel="icon" type="image/png" href="" sizes="192x192">
+    <link rel="icon" type="image/png" href="" sizes="128x128">
+    <link rel="icon" type="image/png" href="" sizes="96x96">
+    <link rel="stylesheet" href="../assets/css/scroll.css">
+  </head>
+</html>
     <body>
         <div id="main">
             <h1>The Back of the HTML File</h1>
@@ -241,5 +146,6 @@
             <p id="bottom">You've reached the bottom, you're awesome! Click the BUTTON to the top.</p>
         </div>
         <div id="button"><a href="javascript:;">TOP</a></div>
+        <script type="text/javascript" src="../assets/js/scroll.js"></script>
     </body>
 </html>

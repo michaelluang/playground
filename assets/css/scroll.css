@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: "Helvetica Nene", Arial, "sans-serif";
+    background: -webkit-linear-gridient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+    background:    -moz-linear-gridient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+    background:      -o-linear-gridient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+    background:         linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+}
+h1, p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5em;
+    color: #202020;
+}
+#middle{
+    margin-top: 500px;
+}
+#bottom{
+    margin-top: 1000px;
+}
+pre {
+    position: relative;
+    white-space: pre;
+    text-align: left;
+    overflow-x: scroll;
+    color: #d3bd7e;
+    background: #202020;
+    margin: 50px 0;
+    border-radius: 20px;
+    padding: 10pt 15pt;
+}
+pre span {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    border: 1px solid #d3bd7e;
+    border-radius: 5px;
+    padding: 4px;
+}
+pre code {
+    font: 0.8em Menlo, 'lucida console', monospace;
+    line-height: 1.4;
+}
+#button {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 60px;
+    height: 60px;
+    background: #202020;
+    text-align: center;
+    display: none;
+    border-radius: 15%;
+}
+#button:hover {
+    background: #d3bd7e;
+}
+#button a {
+    display: block;
+    font-size: 1.2em ;
+    color: #d3bd7e;
+    text-decoration: none;
+    line-height: 60px;
+}
+#button a:hover {
+    color: #202020;
+}
