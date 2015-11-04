@@ -177,7 +177,7 @@ body#frame {
   background: yellow;
 }
 
-@media only screen and (max-width: 840px) {
+@media screen and (max-width: 840px) {
   .container {
     width: 100%;
   }

@@ -117,7 +117,7 @@ body#frame {
   text-align: center;
   background: yellow;
 }
-@media only screen and (max-width: 840px) {
+@include respond-to('(max-width: 840px)') {
   .container {
     width: 100%;
   }
@@ -134,4 +134,3 @@ body#frame {
     margin-left: 0;
   }
 }
-

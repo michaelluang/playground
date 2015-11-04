@@ -1,4 +1,4 @@
-//Web Font: CamingoCode
+// Web Font: CamingoCode
 @mixin fontface($style, $weight, $id) {
   font-family: 'CamingoCode';
   font-style: $style;
@@ -8,4 +8,11 @@
        url(../fonts/2EFCBF_#{$id}_0.woff2) format('woff2'),
        url(../fonts/2EFCBF_#{$id}_0.woff) format('woff'),
        url(../fonts/2EFCBF_#{$id}_0.ttf) format('truetype');
+}
+// Media Query
+@mixin respond-to($breakpoint) {
+  $query: 'screen and ' + $breakpoint;
+  @media #{$query} {
+    @content;
+  }
 }
